@@ -320,7 +320,7 @@ img {
 .footer-container {
     display: flex;
     flex-direction: column;
-    padding: 100px 1020px 100px 120px;
+    padding: 100px 120px 100px 120px;
     gap: 16px;
 }
 
