@@ -24,19 +24,17 @@ img {
     display: block;
 }
 
-header {
+.page-header {
     border-bottom: 1px solid #E7E9FC;
 }
 
 .container {
-    max-width: 1158px;
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .nav-container {
-    width: 1158px;
-    margin: 0 auto;
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -44,6 +42,7 @@ header {
 
 .navigation {
     display: flex;
+    align-items: center;
 }
 
 .navigation-list {
@@ -60,7 +59,7 @@ header {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-right: 76px;
+    margin-right: 76px;
 }
 
 .web {
@@ -78,6 +77,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 500;
+    padding: 24px 0 24px;
 }
 
 .navigation-list-item:hover,
@@ -96,7 +96,7 @@ header {
 .contacts-list {
     display: flex;
     align-self: flex-end;
-    padding-left: 332px;
+    margin-left: 332px;
     gap: 40px;
 
 }
@@ -115,6 +115,7 @@ header {
 
 .hero {
     background-color: #2E2F42;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -124,9 +125,10 @@ header {
     text-align: center;
     color: #fff;
     letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
-    padding: 188px 492px 292px;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding-top: 188px;
 }
 
 .hero-btn {
@@ -139,6 +141,13 @@ header {
     text-align: center;
     cursor: pointer;
     font-weight: 500;
+    display: block;
+    min-width: 196px;
+    margin: 0 auto;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    
 }
 
 .hero-btn:hover,
@@ -149,7 +158,8 @@ header {
 .features-list {
     display: flex;
     gap: 24px;
-    margin: 120px 156px;
+    justify-content: center;
+    padding: 120px 120px;
 }
 
 .features-list-title {
@@ -158,6 +168,8 @@ header {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    width: 264px;
 }
 
 .features-list-text {
@@ -174,6 +186,7 @@ header {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -183,14 +196,20 @@ header {
 }
 
 .team-list {
-display: flex;
-align-items: center;
-gap: 24px;
-margin: calc((100% - 72) / 3);
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: calc((100% - 72) / 3);
 }
 
 .team-list-item {
     background-color: #fff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-container {
+    padding: 32px 0;
 }
 
 .team-list-title {
@@ -200,7 +219,7 @@ margin: calc((100% - 72) / 3);
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
-    padding: 32px 65px 8px;
+    margin-bottom: 8px;
 }
 
 .team-list-text {
@@ -212,6 +231,11 @@ margin: calc((100% - 72) / 3);
     padding-bottom: 32px;
 
 }
+
+.portfolio {
+    padding: 120px 0 120px 0;
+}
+
 .portfolio-title {
     color: #2E2F42;
     font-size: 36px;
@@ -219,15 +243,33 @@ margin: calc((100% - 72) / 3);
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    padding: 120px 611px 72px;
+    margin-bottom: 72px;
+
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 48px;
-    align-items: center;
+    column-gap: 24px;
+    row-gap: 48px;
+    justify-content: center;
     margin: 72px 156px 120px;
+}
+
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-image {
+    width: 360;
+    height: 300;
+}
+
+.portfolio-list-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .portfolio-list-title {
@@ -236,6 +278,7 @@ margin: calc((100% - 72) / 3);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .portfolio-list-text {
@@ -247,10 +290,17 @@ margin: calc((100% - 72) / 3);
 
 .footer {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .studio {
     color: #f4f4fd;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+
 }
 
 .footer-text {
@@ -259,6 +309,7 @@ margin: calc((100% - 72) / 3);
     line-height: 1.5;
     letter-spacing: 0.02em;
     background-color: #2e2f42;
+    max-width: 264px;
 }
 
 .footer-container {
