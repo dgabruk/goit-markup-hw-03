@@ -30,8 +30,9 @@ img {
 
 .container {
     width: 1158px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px 0 15px;
+   
 }
 
 .nav-container {
@@ -115,7 +116,7 @@ img {
 
 .hero {
     background-color: #2E2F42;
-    padding-bottom: 188px;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -147,12 +148,17 @@ img {
     height: 56px;
     border: none;
     border-radius: 4px;
+    min-width: 169px;
     
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #404bbf;
+}
+
+.features {
+    padding: 122px 0;
 }
 
 .features-list {
@@ -192,14 +198,13 @@ img {
 
 .team-descr {
     background-color: #f4f4fd;
-    padding: 120px 120px;
+    padding: 120px 0;
 }
 
 .team-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin: calc((100% - 72) / 3);
 }
 
 .team-list-item {
